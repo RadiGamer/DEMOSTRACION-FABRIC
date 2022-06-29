@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "tag": "c:elded"
+  },
+  "result": "pruebamod:ale_cuatro",
+  "experience": 1.00,
+  "cookingtime": 500
+}

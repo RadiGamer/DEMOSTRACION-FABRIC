@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pruebamod:lingote_escama_dragon"
+    }
+  },
+  "result": {
+    "item": "pruebamod:bloque_escama_dragon"
+  }
+}

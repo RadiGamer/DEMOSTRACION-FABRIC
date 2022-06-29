@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "pruebamod:block/ore_escama_dragon"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#X#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "tag": "c:elded"
+    },
+    "X": {
+      "item": "pruebamod:ale_cuatro"
+    }
+  },
+  "result": {
+    "item": "pruebamod:ruedita_culera"
+  }
+}
