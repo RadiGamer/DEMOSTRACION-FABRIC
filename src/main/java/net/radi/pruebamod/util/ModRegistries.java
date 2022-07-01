@@ -1,23 +1,15 @@
-/*
+
 package net.radi.pruebamod.util;
 
-import net.fabricmc.api.ModInitializer;
-import net.radi.pruebamod.block.PruebaBloques;
-import net.radi.pruebamod.item.PruebaItems;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.radi.pruebamod.entity.custom.EntidadMapache;
+import net.radi.pruebamod.entity.EntidadesMod;
 
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
-
-public class ModRegistries implements ModInitializer {
-    public static final String MOD_ID = "pruebamod";
-    public static final Logger LOGGER = LogManager,getLogger(MOD_ID);
-
-    @Override
-    public void onInitialize(){
-
-        PruebaItems.registerModItems();
-        PruebaBloques.registerModBlock();
+public class ModRegistries  {
+    public static void registerModStuffs(){
+        registerAttributes();
     }
-
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(EntidadesMod.RACCOON, EntidadMapache.setAttributes());
+    }
 }
-*/

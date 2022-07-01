@@ -3,6 +3,7 @@
   "item.pruebamod.ale_cuatro": "Ale Cuarto Creador de todo fierrooo",
   "item.pruebamod.elded": "El Creador de DedSafio",
   "item.pruebamod.lingote_escama_dragon": "Escama de Dragon",
+  "item.pruebamod.spawn_mapache_huevo": "Huevo de aparicion de Mapache",
 
   "block.pruebamod.bloque_escama_dragon": "Bloque de escama de dragon",
   "block.pruebamod.ore_escama_dragon": "Ore de Escama de Dragon",
@@ -14,4 +15,5 @@
   "itemGroup.pruebamod.bloques": "Bloques Random del Mod",
 
   "pruebamod.eldedrisa": "Risa Ded"
+
 }

@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.radi.pruebamod.pruebamod"
+    ],
+    "client": [
+      "net.radi.pruebamod.pruebamodCliente"
     ]
   },
   "mixins": [
