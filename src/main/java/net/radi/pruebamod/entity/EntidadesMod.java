@@ -19,5 +19,5 @@ public class EntidadesMod {
     public static final EntityType<EntidadElDed> ELDED = Registry.register(
             Registry.ENTITY_TYPE, new Identifier(pruebamod.MOD_ID, "elded"),
             FabricEntityTypeBuilder.create(SpawnGroup.CREATURE, EntidadElDed::new)
-                    .dimensions(EntityDimensions.fixed(0.4f, 0.3f)).build()); //HITBOX
+                    .dimensions(EntityDimensions.fixed(0.6f, 1.8f)).build()); //HITBOX
 }

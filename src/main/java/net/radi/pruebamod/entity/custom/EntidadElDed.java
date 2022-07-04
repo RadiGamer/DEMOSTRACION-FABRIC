@@ -1,7 +1,9 @@
 package net.radi.pruebamod.entity.custom;
 
 import net.minecraft.block.BlockState;
+import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
@@ -25,22 +27,24 @@ import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 
+import java.util.EnumSet;
+
 public class EntidadElDed extends HostileEntity implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
 
     public EntidadElDed(EntityType<? extends HostileEntity> entityType, World world) {
-
         super(entityType, world);
     }
 
+
     @Nullable
-    public HostileEntity createChild(ServerWorld world, PassiveEntity entity) {
+    public HostileEntity createChild(ServerWorld world, HostileEntity entity) {
 
         return null;
     }
 
     public static DefaultAttributeContainer.Builder setAttributes() {
-        return HostileEntity.createMobAttributes()
+        return AnimalEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 20.0D)
                 .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0f)
                 .add(EntityAttributes.GENERIC_ATTACK_SPEED, 2.0f)
@@ -49,25 +53,26 @@ public class EntidadElDed extends HostileEntity implements IAnimatable {
 
     protected void initGoals() {
         this.goalSelector.add(0, new SwimGoal(this));
+        this.goalSelector.add(1, new AttackGoal(this));
         this.goalSelector.add(2, new WanderAroundPointOfInterestGoal(this, 0.75f, false));
         this.goalSelector.add(3, new WanderAroundFarGoal(this, 0.75f, 1));
         this.goalSelector.add(4, new LookAroundGoal(this));
         this.goalSelector.add(5, new LookAtEntityGoal(this, PlayerEntity.class, 8.0f));
-        this.targetSelector.add(2, new ActiveTargetGoal<PlayerEntity>(this, PlayerEntity.class, true));
+        this.initCustomGoals();
+    }
+    protected void initCustomGoals() {
+        this.targetSelector.add(1, new ActiveTargetGoal<>(this, PlayerEntity.class, true));
     }
 
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.elded.caminando", true));
             return PlayState.CONTINUE;
-
         }
 
         event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.elded.idle", true));
         return PlayState.CONTINUE;
-
     }
-
 
     @Override
     public void registerControllers(AnimationData animationData) {
