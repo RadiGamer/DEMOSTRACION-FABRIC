@@ -27,10 +27,12 @@
   "pruebamod.eldedhit": "ElDed Golpeado",
 
   "bloque_velocidad_tooltip": "§7Colocate encima de este bloque para obtener §eVelocidad",
-  "bloque_escama_dragon_tooltip": "Bloque formado con escama de dragon",
-  "bloque_komanche_tooltip": "Un Komanche Salvaje a aparecido",
+  "bloque_escama_dragon_tooltip": "§7Bloque formado con escama de dragon",
+  "bloque_komanche_tooltip": "§7Un Komanche Salvaje a aparecido",
   "bloque_fuerza_tooltip": "§7Colocate encima de este bloque para obtener §eFuerza",
-  "ore_escama_dragon_tooltip": "Miname para obtener escama de dragon"
+  "ore_escama_dragon_tooltip": "§7Miname para obtener escama de dragon",
+  "item.espada_escama.tooltip.ctrl": "§7Presiona §eCtrl §7para mas informacion",
+  "item.espada_escama.tooltip": "§7Golpea un enemigo para agregarle el efecto de §f§llevitacion"
 
 
 }

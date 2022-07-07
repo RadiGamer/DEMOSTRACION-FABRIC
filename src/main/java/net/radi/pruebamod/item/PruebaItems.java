@@ -1,16 +1,12 @@
 package net.radi.pruebamod.item;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.minecraft.client.item.TooltipContext;
 import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.radi.pruebamod.entity.EntidadesMod;
 import net.radi.pruebamod.item.custom.*;
 import net.radi.pruebamod.pruebamod;
 import net.minecraft.util.registry.Registry;
-import org.w3c.dom.Text;
-
-import javax.annotation.Nullable;
 
 public class PruebaItems {
     public static final Item RUEDITA_CULERA = registerItem("ruedita_culera",                     //ITEM DE LA RUEDITA CULERA
