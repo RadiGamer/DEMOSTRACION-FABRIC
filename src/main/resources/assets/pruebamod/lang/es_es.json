@@ -4,8 +4,16 @@
   "item.pruebamod.elded": "El Creador de DedSafio",
   "item.pruebamod.lingote_escama_dragon": "Escama de Dragon",
   "item.pruebamod.spawn_mapache_huevo": "Huevo de aparicion de Mapache",
+  "item.pruebamod.azada_escama": "Azada de Escama de Dragon",
+  "item.pruebamod.hacha_escama": "Hacha de Escama de dragon",
+  "item.pruebamod.pico_escama": "Pico de Escama de Dragon",
+  "item.pruebamod.pala_escama": "Pala de Escama de Dragon",
+  "item.pruebamod.espada_escama": "Espada de Escama de Dragon",
 
-  "block.pruebamod.bloque_escama_dragon": "Bloque de escama de dragon",
+
+  "entity.pruebamod.elded": "El Ded",
+
+  "block.pruebamod.bloque_escama_dragon": "Bloque de Escama de Dragon ",
   "block.pruebamod.ore_escama_dragon": "Ore de Escama de Dragon",
   "block.pruebamod.komanche": "Pugmanche",
   "block.pruebamod.bloque_velocidad": "Bloque de Franchesco Virgolini",
@@ -13,7 +21,16 @@
 
   "itemGroup.pruebamod.random": "Objetos Random del Mod",
   "itemGroup.pruebamod.bloques": "Bloques Random del Mod",
+  "itemGroup.pruebamod.herramientas": "Herramientas del Mod",
 
-  "pruebamod.eldedrisa": "Risa Ded"
+  "pruebamod.eldedrisa": "Risa Ded",
+  "pruebamod.eldedhit": "ElDed Golpeado",
+
+  "bloque_velocidad_tooltip": "§7Colocate encima de este bloque para obtener §eVelocidad",
+  "bloque_escama_dragon_tooltip": "Bloque formado con escama de dragon",
+  "bloque_komanche_tooltip": "Un Komanche Salvaje a aparecido",
+  "bloque_fuerza_tooltip": "§7Colocate encima de este bloque para obtener §eFuerza",
+  "ore_escama_dragon_tooltip": "Miname para obtener escama de dragon"
+
 
 }

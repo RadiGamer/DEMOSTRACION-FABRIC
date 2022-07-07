@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX",
+    "X#",
+    " #"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "pruebamod:lingote_escama_dragon"
+    }
+  },
+  "result": {
+    "item": "pruebamod:hacha_escama"
+  }
+}

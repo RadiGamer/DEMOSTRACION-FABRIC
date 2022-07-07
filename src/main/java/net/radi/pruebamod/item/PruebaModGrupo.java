@@ -13,4 +13,7 @@ public class PruebaModGrupo {
 
     public static final ItemGroup BLOQUES = FabricItemGroupBuilder.build(new Identifier(pruebamod.MOD_ID,"bloques"),
             ()-> new ItemStack(PruebaBloques.BLOQUE_ESCAMA_DRAGON));
+
+    public static final ItemGroup HERRAMIENTAS = FabricItemGroupBuilder.build(new Identifier(pruebamod.MOD_ID,"herramientas"),
+            ()-> new ItemStack(PruebaItems.ESPADA_ESCAMA));
 }

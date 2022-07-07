@@ -11,6 +11,6 @@ public class pruebamodCliente implements ClientModInitializer {
     public void onInitializeClient(){
 
         EntityRendererRegistry.register(EntidadesMod.RACCOON, RenderMapache::new);
-        EntityRendererRegistry.register(EntidadesMod.ELDED, RenderElDed::new);
+        EntityRendererRegistry.register(EntidadesMod.ELDED_ENTIDAD, RenderElDed::new);
     }
 }

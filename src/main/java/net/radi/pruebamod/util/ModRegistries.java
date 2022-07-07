@@ -12,6 +12,6 @@ public class ModRegistries  {
     }
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(EntidadesMod.RACCOON, EntidadMapache.setAttributes());
-        FabricDefaultAttributeRegistry.register(EntidadesMod.ELDED, EntidadElDed.setAttributes());
+        FabricDefaultAttributeRegistry.register(EntidadesMod.ELDED_ENTIDAD, EntidadElDed.setAttributes());
     }
 }

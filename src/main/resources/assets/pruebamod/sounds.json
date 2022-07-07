@@ -4,5 +4,11 @@
     "sounds": [
       "pruebamod:elded"
     ]
+  },
+  "elded_hit": {
+    "subtitile": "pruebamod.eldedhit",
+    "sounds": [
+      "pruebamod:elded"
+    ]
   }
 }
