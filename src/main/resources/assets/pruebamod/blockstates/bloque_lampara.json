@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "clicked=false": {"model": "pruebamod:block/bloque_lampara_off"},
+    "clicked=true": {"model": "pruebamod:block/bloque_lampara_on"}
+  }
+}

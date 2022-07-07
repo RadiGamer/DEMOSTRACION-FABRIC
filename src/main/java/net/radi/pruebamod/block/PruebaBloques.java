@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.World;
 import net.radi.pruebamod.block.custom.BloqueFuerza;
+import net.radi.pruebamod.block.custom.BloqueLampara;
 import net.radi.pruebamod.block.custom.BloqueVelocidad;
 import net.radi.pruebamod.item.PruebaModGrupo;
 import net.radi.pruebamod.pruebamod;
@@ -28,13 +29,20 @@ public class PruebaBloques {
         new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), PruebaModGrupo.BLOQUES, "bloque_escama_dragon_tooltip"); //BLOQUE QUE SE ROMPE INSTA EN LA CATEGORIA MISC
 
     public static final Block ORE_ESCAMA_DRAGON = registerBlock("ore_escama_dragon",
-            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), PruebaModGrupo.BLOQUES, "ore_escama_dragon_tooltip"); //BLOQUE CON DURACION EN LA CATEGORIA DE MISC
+            new Block(FabricBlockSettings.of(Material.METAL).strength(3f).requiresTool()), PruebaModGrupo.BLOQUES, "ore_escama_dragon_tooltip"); //BLOQUE CON DURACION
+
     public static final Block KOMANCHE = registerBlock("komanche",
             new Block(FabricBlockSettings.of(Material.WOOL).strength(1f)), PruebaModGrupo.BLOQUES,"bloque_komanche_tooltip"); //BLOQUE LANA DE KOMANCHE
+
     public static final Block BLOQUE_VELOCIDAD = registerBlock("bloque_velocidad",
             new BloqueVelocidad(FabricBlockSettings.of(Material.DECORATION).breakInstantly()), PruebaModGrupo.BLOQUES, "bloque_velocidad_tooltip"); //BLOQUE CON VELOCIDAD
+
     public static final Block BLOQUE_FUERZA = registerBlock("bloque_fuerza",
             new BloqueFuerza(FabricBlockSettings.of(Material.DECORATION).breakInstantly()), PruebaModGrupo.BLOQUES,"bloque_fuerza_tooltip"); //BLOQUE CON FUERZA
+
+    public static final Block BLOQUE_LAMPARA = registerBlock("bloque_lampara",
+            new BloqueLampara(FabricBlockSettings.of(Material.METAL).breakInstantly().luminance((state) -> state.get(BloqueLampara.CLICKED) ? 30 : 0 )), PruebaModGrupo.BLOQUES,"bloque_fuerza_tooltip"); //LAMPARA QUE CAMBIA AL DARLE CLICK
+
 
 
 
